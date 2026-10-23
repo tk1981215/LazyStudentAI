@@ -18,26 +18,27 @@ Built for the **Hacktoberfest 2026 Open-Source AI Challenge — Week 3: Slow and
 - [Future Improvements](#-future-improvements)
 - [Hacktoberfest Challenge](#-hacktoberfest-challenge)
 - [Author](#-author)
+- [License](#-license)
 
 ## 🎯 About the Project
 
 Students often spend a lot of time organizing lecture notes, preparing viva questions, creating flashcards, and planning revision.
 
-LazyStudentAI aims to automate these repetitive tasks through an easy-to-use interface.
+LazyStudentAI aims to simplify these repetitive tasks through an easy-to-use interface.
 
-Paste your notes or upload a PDF/TXT file and generate a study pack containing a summary, viva questions and answers, flashcards, and a revision checklist.
+Paste your notes or upload a supported PDF or TXT file to generate a study pack containing a summary, viva questions and answers, flashcards, and a revision checklist.
 
 ## ✨ Features
 
 ### 📝 1. Smart Study Material Input
-- Paste messy or unorganized notes.
-- Upload PDF or TXT files.
-- Convert study material into structured learning resources.
+- Paste messy or unorganized study notes.
+- Upload supported PDF or TXT files.
+- Turn study material into structured learning resources.
 
 ### 📚 2. AI-Generated Summary
 - Summarize important concepts.
 - Make lengthy study material easier to revise.
-- Help students focus on key points.
+- Focus on key points.
 
 ### 🎓 3. Viva Questions and Answers
 - Generate practice questions from study notes.
@@ -57,45 +58,51 @@ Paste your notes or upload a PDF/TXT file and generate a study pack containing a
 ## 📸 Project Screenshots
 
 ### 1. Study Material Input
-![Study Material Input](screenshots/study-input.png)
+
+![Study Material Input](study-input.png)
 
 ### 2. Revision Checklist
-![Revision Checklist](screenshots/revision-checklist.png)
+
+![Revision Checklist](revision-checklist.png)
 
 ### 3. Viva Questions and Answers
-![Viva Questions and Answers](screenshots/viva-questions.png)
+
+![Viva Questions and Answers](viva-questions.png)
 
 ### 4. Interactive Flashcards
-![Interactive Flashcards](screenshots/flashcards.png)
 
-> To display these images, upload the five screenshots into a folder named `screenshots` in the repository, using the exact filenames shown above.
+![Interactive Flashcards](flashcards.png)
 
 ## ⚙️ How It Works
 
 1. Open the LazyStudentAI application.
 2. Paste your study notes or upload a supported document.
 3. Click **Make my study pack**.
-4. Explore the generated summary, viva Q&A, flashcards, and checklist.
+4. Explore the generated summary, viva questions and answers, flashcards, and revision checklist.
 5. Use the checklist to track your revision.
 
 ## 🛠️ Technology Stack
 
-- **Python** — Core programming language
-- **Google Colab** — Development and execution environment
-- **Open-weight language model** — AI-powered text generation
-- **Hugging Face Transformers** — Model integration, if used
-- **Gradio or another UI framework** — User interface, if used
+The project uses Python and a Google Colab notebook as its development environment.
 
-*The exact model and libraries should be specified according to the actual implementation.*
+Depending on the actual notebook implementation, the technology stack may include:
+
+- **Python** — Core programming language.
+- **Google Colab** — Notebook development and execution.
+- **Hugging Face Transformers** — Language-model integration, if used.
+- **Open-weight language model** — AI-powered text generation, if used.
+- **Gradio or another UI framework** — User interface, if used.
+
+*Update this list to match the libraries, model, and interface actually used in the notebook.*
 
 ## 🚀 Getting Started
 
 ### Option 1: Run using Google Colab
 
-1. Visit the [LazyStudentAI GitHub repository](https://github.com/tk1981215/LazyStudentAI).
-2. Open the `.ipynb` notebook.
+1. Open the [LazyStudentAI repository](https://github.com/tk1981215/LazyStudentAI).
+2. Click `LazyStudentAi.ipynb`.
 3. Download the notebook or open it in Google Colab.
-4. Follow the setup instructions in the notebook.
+4. Follow the setup instructions provided in the notebook.
 5. Run the cells in order.
 6. Enter your study material and generate a study pack.
 
@@ -108,7 +115,13 @@ git clone https://github.com/tk1981215/LazyStudentAI.git
 cd LazyStudentAI
 ```
 
-Install the dependencies specified in the notebook or in `requirements.txt`, then run the notebook using Jupyter or Google Colab.
+Install the dependencies required by the notebook, then run it using Jupyter Notebook or JupyterLab.
+
+For example, if Jupyter is installed:
+
+```bash
+jupyter notebook LazyStudentAi.ipynb
+```
 
 *Local execution requires the necessary Python dependencies, model access, and hardware resources.*
 
@@ -116,14 +129,14 @@ Install the dependencies specified in the notebook or in `requirements.txt`, the
 
 Open-source software and accessible open-weight models make AI development more flexible and approachable for students and independent developers.
 
-For LazyStudentAI, this approach offers opportunities to:
+LazyStudentAI provides an opportunity to:
 
-- Experiment with AI without depending entirely on proprietary APIs.
+- Experiment with AI-powered learning tools.
 - Customize prompts and model behavior.
 - Learn how language models work in practical applications.
 - Explore local inference and privacy-conscious processing.
 
-Whether the application can run offline or keep all study material local depends on the chosen model and deployment configuration.
+Offline operation and data privacy depend on the selected model and deployment configuration.
 
 ## 🔮 Future Improvements
 
@@ -131,7 +144,7 @@ Whether the application can run offline or keep all study material local depends
 - Add subject-wise organization.
 - Save and revisit previous study packs.
 - Support additional document formats.
-- Improve the accuracy and evaluation of generated answers.
+- Improve the accuracy of generated answers.
 - Add personalized revision recommendations.
 
 ## 🏆 Hacktoberfest Challenge
@@ -151,4 +164,3 @@ A project license has not yet been specified. Add a suitable `LICENSE` file if y
 ---
 
 ⭐ If you find this project useful, consider starring the repository!
-
