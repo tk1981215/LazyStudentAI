@@ -2,92 +2,143 @@
 
 **Study smarter, not harder!**
 
-LazyStudentAI is an AI-powered study assistant designed to make learning easier by transforming study material into useful revision resources. It aims to reduce the time students spend organizing notes so they can focus more on understanding concepts.
+LazyStudentAI is an AI-powered study assistant that transforms messy study notes into organized learning resources, helping students prepare for exams and revise concepts more efficiently.
 
-Built as part of the **Hacktoberfest Open-Source AI Challenge — Week 3: Slow and Steady**.
+Built for the **Hacktoberfest 2026 Open-Source AI Challenge — Week 3: Slow and Steady**.
+
+## 📌 Table of Contents
+
+- [About the Project](#-about-the-project)
+- [Features](#-features)
+- [Project Screenshots](#-project-screenshots)
+- [How It Works](#-how-it-works)
+- [Technology Stack](#️-technology-stack)
+- [Getting Started](#-getting-started)
+- [Why Open-Source AI](#-why-open-source-ai)
+- [Future Improvements](#-future-improvements)
+- [Hacktoberfest Challenge](#-hacktoberfest-challenge)
+- [Author](#-author)
+
+## 🎯 About the Project
+
+Students often spend a lot of time organizing lecture notes, preparing viva questions, creating flashcards, and planning revision.
+
+LazyStudentAI aims to automate these repetitive tasks through an easy-to-use interface.
+
+Paste your notes or upload a PDF/TXT file and generate a study pack containing a summary, viva questions and answers, flashcards, and a revision checklist.
 
 ## ✨ Features
 
-- 📝 **Smart Summaries:** Turn study material into concise summaries.
-- 🎯 **Viva Questions:** Generate practice questions and answers.
-- 🗂️ **Flashcards:** Create quick revision cards.
-- ✅ **Revision Checklist:** Organize topics for study and revision.
-- 🤖 **AI-Powered Learning:** Use language models to assist with studying.
+### 📝 1. Smart Study Material Input
+- Paste messy or unorganized notes.
+- Upload PDF or TXT files.
+- Convert study material into structured learning resources.
 
-*Note: Features depend on the current implementation of the project.*
+### 📚 2. AI-Generated Summary
+- Summarize important concepts.
+- Make lengthy study material easier to revise.
+- Help students focus on key points.
 
-## 🎯 Problem Statement
+### 🎓 3. Viva Questions and Answers
+- Generate practice questions from study notes.
+- Review answers to important concepts.
+- Prepare for college practicals and viva examinations.
 
-Students often spend a lot of time preparing notes, creating questions, and organizing revision materials. LazyStudentAI aims to automate these repetitive tasks and make study preparation more efficient.
+### 🗂️ 4. Interactive Flashcards
+- Revise concepts using question-and-answer cards.
+- Flip cards to reveal answers.
+- Practice important definitions and concepts.
 
-## 💡 Solution
+### ✅ 5. Revision Checklist
+- Organize topics into revision tasks.
+- Mark topics as completed.
+- Track revision progress using a progress indicator.
 
-LazyStudentAI takes study material as input and uses AI to generate structured learning resources. This helps students revise important topics, practice viva questions, and organize their learning.
+## 📸 Project Screenshots
 
-## 🛠️ Tech Stack
+### 1. Study Material Input
+![Study Material Input](screenshots/study-input.png)
+
+### 2. Revision Checklist
+![Revision Checklist](screenshots/revision-checklist.png)
+
+### 3. Viva Questions and Answers
+![Viva Questions and Answers](screenshots/viva-questions.png)
+
+### 4. Interactive Flashcards
+![Interactive Flashcards](screenshots/flashcards.png)
+
+> To display these images, upload the five screenshots into a folder named `screenshots` in the repository, using the exact filenames shown above.
+
+## ⚙️ How It Works
+
+1. Open the LazyStudentAI application.
+2. Paste your study notes or upload a supported document.
+3. Click **Make my study pack**.
+4. Explore the generated summary, viva Q&A, flashcards, and checklist.
+5. Use the checklist to track your revision.
+
+## 🛠️ Technology Stack
 
 - **Python** — Core programming language
 - **Google Colab** — Development and execution environment
-- **Open-source AI / open-weight language model** — Text generation
+- **Open-weight language model** — AI-powered text generation
 - **Hugging Face Transformers** — Model integration, if used
-- **Gradio** — Interactive interface, if used
+- **Gradio or another UI framework** — User interface, if used
+
+*The exact model and libraries should be specified according to the actual implementation.*
 
 ## 🚀 Getting Started
 
-### Option 1: Run in Google Colab
+### Option 1: Run using Google Colab
 
-1. Open the `.ipynb` notebook in this repository.
-2. Open it in Google Colab.
-3. Follow the notebook instructions.
-4. Run the cells in order.
-5. Enter your study material and explore the generated results.
+1. Visit the [LazyStudentAI GitHub repository](https://github.com/tk1981215/LazyStudentAI).
+2. Open the `.ipynb` notebook.
+3. Download the notebook or open it in Google Colab.
+4. Follow the setup instructions in the notebook.
+5. Run the cells in order.
+6. Enter your study material and generate a study pack.
 
 ### Option 2: Run locally
 
-If the notebook supports local execution:
+Clone the repository:
 
-1. Clone the repository:
+```bash
+git clone https://github.com/tk1981215/LazyStudentAI.git
+cd LazyStudentAI
+```
 
-   ```bash
-   git clone https://github.com/tk1981215/LazyStudentAI.git
-   ```
+Install the dependencies specified in the notebook or in `requirements.txt`, then run the notebook using Jupyter or Google Colab.
 
-2. Open the project directory:
-
-   ```bash
-   cd LazyStudentAI
-   ```
-
-3. Install the dependencies listed in the notebook or project requirements.
-
-4. Open and run the notebook using Jupyter Notebook or Google Colab.
+*Local execution requires the necessary Python dependencies, model access, and hardware resources.*
 
 ## 🌱 Why Open-Source AI?
 
-Open-source software and accessible open-weight models give developers more flexibility to experiment, learn, and customize AI applications.
+Open-source software and accessible open-weight models make AI development more flexible and approachable for students and independent developers.
 
-Depending on the selected model and deployment setup, this approach can reduce reliance on paid proprietary APIs and may enable local or offline inference. Keeping study material local can also improve privacy when the model and application are configured appropriately.
+For LazyStudentAI, this approach offers opportunities to:
 
-## 🎓 Who Is It For?
+- Experiment with AI without depending entirely on proprietary APIs.
+- Customize prompts and model behavior.
+- Learn how language models work in practical applications.
+- Explore local inference and privacy-conscious processing.
 
-- College and university students
-- Students preparing for viva examinations
-- Learners revising technical subjects
-- Anyone who wants to organize study material more efficiently
+Whether the application can run offline or keep all study material local depends on the chosen model and deployment configuration.
 
 ## 🔮 Future Improvements
 
-- Upload and process PDF notes
-- Export summaries and flashcards
-- Save revision history
-- Add subject-wise organization
-- Improve evaluation of generated answers
+- Export study packs as PDF files.
+- Add subject-wise organization.
+- Save and revisit previous study packs.
+- Support additional document formats.
+- Improve the accuracy and evaluation of generated answers.
+- Add personalized revision recommendations.
 
-## 🏆 Hacktoberfest 2026
+## 🏆 Hacktoberfest Challenge
 
-This project is inspired by the theme **Slow and Steady**: use AI to reduce repetitive work and make everyday tasks easier.
+LazyStudentAI is inspired by the theme **Slow and Steady**: use AI to automate repetitive tasks and make everyday learning easier.
 
-Challenge: [Hacktoberfest Week 3 — Slow and Steady](https://dev.to/challenges/hacktoberfest-week3-2026-10-19)
+Challenge: [Hacktoberfest Open-Source AI Challenge — Week 3](https://dev.to/challenges/hacktoberfest-week3-2026-10-19)
 
 ## 👩‍💻 Author
 
@@ -95,8 +146,9 @@ Challenge: [Hacktoberfest Week 3 — Slow and Steady](https://dev.to/challenges/
 
 ## 📄 License
 
-A license has not yet been specified. Add a license file after deciding how you want others to use, modify, and distribute your project.
+A project license has not yet been specified. Add a suitable `LICENSE` file if you want to define how others may use, modify, and distribute this project.
 
 ---
 
-**If you find this project useful, consider giving the repository a ⭐!**
+⭐ If you find this project useful, consider starring the repository!
+
